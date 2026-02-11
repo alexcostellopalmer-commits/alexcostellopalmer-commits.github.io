@@ -1,1 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Costello-Palmer | Business Administration Student</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1em;
+            opacity: 0.95;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            transition: border-color 0.3s;
+        }
+
+        .contact-info a:hover {
+            border-bottom-color: white;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .item-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .item-location {
+            color: #718096;
+            font-style: italic;
+        }
+
+        .item-subtitle {
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+
+        .item-subtitle strong {
+            color: #2d3748;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #2d3748;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .skill-category li {
+            padding: 4px 0;
+            color: #4a5568;
+        }
+
+        .skill-category li:before {
+            content: "▹ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .item-location {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Alex Costello-Palmer</h1>
+            <div class="contact-info">
+                Lincoln, NE 68508 | (785) 423-6724 | <a href="mailto:acostello-palmer2@huskers.unl.edu">acostello-palmer2@huskers.unl.edu</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">University of Nebraska-Lincoln</div>
+                        <div class="item-location">Lincoln, NE</div>
+                    </div>
+                    <div class="item-subtitle">
+                        <strong>Bachelor of Science in Business Administration</strong> | Expected May 2028
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>Work Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Someguys Window Cleaning</div>
+                        <div class="item-location">Omaha/Lincoln, NE</div>
+                    </div>
+                    <div class="item-subtitle">
+                        <strong>Window Technician</strong> | Mar 2025 - Aug 2025
+                    </div>
+                    <ul>
+                        <li>Detailed over 150+ interior and exterior windows, mirrors, and glass surfaces to a streak-free standard, demonstrating strong attention to detail and high-quality workmanship</li>
+                        <li>Operated ladders, extension poles, and water-fed systems on 10-15 jobs per week in a safe and meticulous manner, applying safety awareness and consistent reliability on every job</li>
+                        <li>Eliminated dirt, debris, and paint daily from glass using proper tools and solutions to promote problem-solving and adaptability when handling unique cleaning challenges</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">BHM Custom</div>
+                        <div class="item-location">Springfield, NE</div>
+                    </div>
+                    <div class="item-subtitle">
+                        <strong>General Laborer</strong> | May 2024 - Aug 2024
+                    </div>
+                    <ul>
+                        <li>Assisted with over a dozen residential construction and remodeling projects in a quick and efficient manner, contributing to team collaboration across framing, drywall, flooring, and painting tasks</li>
+                        <li>Operated 15+ types of hand and power tools safely and efficiently, showing strong safety compliance, technical aptitude, and a reliable work ethic</li>
+                        <li>Transferred and organized 1000+ lbs. of materials to maintain a safe and efficient job site, emphasizing organization and responsibility</li>
+                        <li>Performed site preparation duties daily such as digging, leveling, and debris removal, adapting to changing work conditions and applying problem-solving skills as needed</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Red Robin</div>
+                        <div class="item-location">Papillion, NE</div>
+                    </div>
+                    <div class="item-subtitle">
+                        <strong>Host/Busser</strong> | Aug 2023 - Dec 2023
+                    </div>
+                    <ul>
+                        <li>Collaborated with a team of 10+ servers and management to maintain smooth restaurant operations, using clear communication and teamwork</li>
+                        <li>Operated POS and OpenTable systems to manage bookings and guest flow for 100+ customers per shift, demonstrating customer service, organization, and attention to detail</li>
+                        <li>Assisted in maintaining a clean and organized front-of-house environment across 20+ tables, supporting a professional and welcoming dining experience</li>
+                        <li>Managed seating charts, waitlists, and reservations daily to maximize efficiency, applying problem-solving, adaptability, and a customer-focused mindset</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li>POS & Reservation Systems (OpenTable)</li>
+                            <li>Hand & Power Tools</li>
+                            <li>Equipment Maintenance</li>
+                            <li>Workspace Organization</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Construction & Maintenance</h3>
+                        <ul>
+                            <li>Framing, Drywall, Flooring, Painting</li>
+                            <li>Site Preparation & Material Handling</li>
+                            <li>Ladder & Water-Fed Pole Operation</li>
+                            <li>Glass & Surface Cleaning Techniques</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Alex Costello-Palmer. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
